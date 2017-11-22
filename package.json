@@ -6,7 +6,7 @@
   "scripts": {
     "dev-serv": "webpack-dev-server",
     "dev-build": "webpack -d --watch",
-    "prod-build": "webpack -p --env produ"
+    "prod-build": "webpack -p --env production"
   },
   "author": "Keith Rodriguez",
   "license": "ISC",
@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "normalize.css": "^7.0.0"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
