@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = (env) => {
   const isProduction = env === 'production';
   // crate variable to use in "plugins"
-  const CSSExtract = new ExtractTextPlugin('styles.css');
+  const CSSExtract = new ExtractTextPlugin('style.css');
 
   return {
     entry: {
@@ -15,7 +15,7 @@ module.exports = (env) => {
       ],
     },
     output: {
-      path: path.join(__dirname, 'dist'),
+      path: path.join(__dirname, 'assets'),
       filename: 'bundle.js'
     },
     module: {
@@ -59,9 +59,9 @@ module.exports = (env) => {
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
-      contentBase: path.join(__dirname),
+      contentBase: './',
       historyApiFallback: true,
-      publicPath: '/dist/'
+      publicPath: '/'
     }
   };
 };

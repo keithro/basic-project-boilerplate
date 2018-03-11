@@ -1,5 +1,5 @@
 # Boilerplate 
-A starter boilerplate with webpack and ESLint config for JavaScript builds.
+A starter boilerplate with webpack config for SASS and ESLint for JavaScript builds.
 
 ### To Get Started Run
 ```sh
